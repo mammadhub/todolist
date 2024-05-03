@@ -1,0 +1,106 @@
+@import "./variables.scss";
+*,
+*::before,
+*::after 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.countainer {
+    width: 100%;
+    height: 100vh;
+    background-color: $mavi;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .todoapp {
+        display: flex;
+        flex-direction: column;
+        max-height: 40rem;
+        gap: 2rem;
+        border-radius: $borderradius;
+        background-color: white;
+        padding: 2rem;
+
+        h1 {
+            font-size: $sriftsize;
+        }
+
+        .plus {
+            display: flex;
+            gap: 1rem;
+
+            .add {
+                width: 30rem;
+                padding: 1rem;
+                height: $height;
+                border-radius: $borderradius;
+            }
+
+            .topla {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 0;
+                border-radius: $borderradius;
+                height: $height;
+                width: 5rem;
+                background-color: $benovse;
+                color: white;
+                font-size: $sriftsize;
+                cursor: pointer;
+            }
+        }
+
+        .create {
+            width: $width;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            overflow-y: auto; 
+            overflow-x: hidden;
+            // scrollbar-width: none; 
+
+            li {
+                font-size: 2rem;
+                padding: 1rem;
+                background-color: rgba(128, 128, 128, 0.255);
+                border-radius: $borderradius;
+            }
+        }
+        .clear{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .btn{
+                padding: 1rem 1.5rem;
+                background-color: $benovse;
+                color: white;
+                border-radius: $borderradius;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
