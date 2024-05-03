@@ -79,7 +79,7 @@ a {
             gap: 1rem;
             overflow-y: auto; 
             overflow-x: hidden;
-            // scrollbar-width: none; 
+            scrollbar-width: none; 
 
             li {
                 font-size: 2rem;
@@ -91,8 +91,9 @@ a {
         .clear{
             width: 100%;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
+            font-size: 200%;
             .btn{
                 padding: 1rem 1.5rem;
                 background-color: $benovse;

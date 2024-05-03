@@ -74,6 +74,7 @@ a {
   gap: 1rem;
   overflow-y: auto;
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 .countainer .todoapp .create li {
   font-size: 2rem;
@@ -84,8 +85,9 @@ a {
 .countainer .todoapp .clear {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  font-size: 200%;
 }
 .countainer .todoapp .clear .btn {
   padding: 1rem 1.5rem;
