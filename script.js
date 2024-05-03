@@ -17,6 +17,10 @@ function ElaveEt() {
     }
  
 }
-function clear() {
+// function clear() {
+//     console.log("sara");
+// }
+let clear = document.querySelector(".btn")
+clear.addEventListener("click" , ()=>{
     ul.innerHTML="";
-}
+})
